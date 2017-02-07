@@ -6,13 +6,13 @@ function part4()
     x = cos(theta);
     y = sin(theta);
     figure;
-    plot(x,y) 
+    plot(x,y,'yellow') 
     
-    hold on
     xValues = rand(1,10000000) * 2 - 1;
     yValues = rand(1,10000000) * 2 - 1;
     scatter(xValues,yValues);
-    
+      hold on
+  
     count = 0;
     
     for i = 1 : length(xValues)

@@ -6,6 +6,7 @@ function part1
     g = makeNormalizedVector(1, numDimensions);
     A = g * f'; % outer product
     gPrime = A * f;
+    disp(A);
 
     disp('Angle between g and g prime should be one: ');
     disp(cos(acos(dot(g, gPrime)))); % no need to normalize as they already are
